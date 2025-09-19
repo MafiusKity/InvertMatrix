@@ -9,7 +9,7 @@ invert_matrix<-function(Matrix_){
   if(n_col!=n_row){
     stop("The matrix is not quadratic!")
   }
-  if(det(t)==0){
+  if(det(Matrix_)==0){
     stop("Det. of matrix is 0; it's not possible to invert it!")
   }
   n<-n_row
